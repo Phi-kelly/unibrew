@@ -1,6 +1,29 @@
+
 <?php get_header(); ?>
-<h1>Royal Unibrews A/S</h1>
-<h2>I can push. C.s.</h2>
-<h4>i can push. Sunakshi </h4>
-<h4>i can push. Stella</h4>
+
+
+<div class="jumbotron sticky-top">
+<h1 class="text-center"><?php the_title(); ?></h1>
+</div>
+
+<div class="container">
+
+<?php if ( have_posts() ) { ?>
+
+
+<div class="row">
+<?php while (have_posts() ) { ?>
+
+<div class="col-md-12 text-center">
+<?php
+the_post(); 
+the_content();
+?>
+</div>
+</div>
+<?php	}  ?>
+<?php } ?>
+
+</div>
+
 <?php get_footer(); ?>

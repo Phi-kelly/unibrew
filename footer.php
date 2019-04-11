@@ -1,8 +1,9 @@
-<footer class="nav nav-navbar-bottom">
+<footer class="fixed-bottom">
 <?php wp_nav_menu(array('theme_location'=>'secondary')); ?>
-    <small> &copy; 2018, Royal Unibrew A/S </small>
+    <p>    <?php wp_footer(); ?>
+ <small> &copy; 2018, Royal Unibrew A/S<small> </p>
+
 </footer>
-<?php wp_footer(); ?>
 </body>
 
 </html>
